@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bg4o
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-apku-tenant/test-app-idxx/devfile-sample-python-basic-bg4o@sha256:fdda421bd876b299cfd74362432faf4b9449b6172523d1e655d05c5720d6e1a5
+        name: my-python
+        resources: {}
+status: {}
